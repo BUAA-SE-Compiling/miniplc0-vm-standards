@@ -1,4 +1,4 @@
-# miniplc0-vm-standard
+# miniplc0-vm-standards
 
 这里是 miniplc0 对应的虚拟机的标准。
 
