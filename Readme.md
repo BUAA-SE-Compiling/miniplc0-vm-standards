@@ -25,14 +25,14 @@ sp: 栈寄存器，总是指向栈内最高有效地址的下一个地址
 |编码|指令|伪代码|全称|
 |--|--|--|--|
 |0|ILL|正常遇到会panic，但是在debug模式下由debugger接管。|illegal instruction|
-|1|LIT x|stack\[sp\]=x;sp++;|load int
-|2|LOD x|stack\[sp\]=stack\[x\];sp++;|load
-|3|STO x|stack\[x\]=stack\[sp-1\];sp--;|store
-|4|ADD|stack\[sp-2\]+=stack\[sp-1\];sp--;|add
-|5|SUB|stack\[sp-2\]-=stack\[sp-1\];sp--;|subtract
-|6|MUL|stack\[sp-2\]\*=stack\[sp-1\];sp--;|multiply
-|7|DIV|stack\[sp-2\]/=stack\[sp-1\];sp--;|divide
-|8|WRT|printf\(\"%d\\n", stack\[sp-1\]\);sp--;|write
+|1|LIT x|`stack[sp]=x;sp++;`|load int |
+|2|LOD x|`stack[sp]=stack[x];sp++;`|load |
+|3|STO x|`stack[x]=stack[sp-1];sp--;`|store |
+|4|ADD|`stack[sp-2]+=stack[sp-1];sp--;`|add |
+|5|SUB|`stack[sp-2]-=stack[sp-1];sp--;`|subtract |
+|6|MUL|`stack[sp-2]\*=stack[sp-1];sp--;`|multiply |
+|7|DIV|`stack[sp-2]/=stack[sp-1];sp--;`|divide |
+|8|WRT|`printf("%d\n", stack[sp-1]);sp--;`|write |
 
 
 ## 存储区
