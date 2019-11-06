@@ -30,7 +30,7 @@ sp: 栈寄存器，总是指向栈内最高有效地址的下一个地址
 |3|STO x|`stack[x]=stack[sp-1];sp--;`|store |
 |4|ADD|`stack[sp-2]+=stack[sp-1];sp--;`|add |
 |5|SUB|`stack[sp-2]-=stack[sp-1];sp--;`|subtract |
-|6|MUL|`stack[sp-2]\*=stack[sp-1];sp--;`|multiply |
+|6|MUL|`stack[sp-2]*=stack[sp-1];sp--;`|multiply |
 |7|DIV|`stack[sp-2]/=stack[sp-1];sp--;`|divide |
 |8|WRT|`printf("%d\n", stack[sp-1]);sp--;`|write |
 
